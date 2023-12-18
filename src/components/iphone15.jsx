@@ -3,11 +3,15 @@ import { FaChevronLeft } from "react-icons/fa";
 export default function IPhone15(props) {
   return (
     <div className="relative">
-      <div className="z-50 absolute top-20 w-full ">
-        <h1 className="text-white z-50 text-[56px] font-semibold text-center">
+      <div className="z-25 absolute top-20 w-full ">
+        <h1
+          className={`text-${props.color} z-50 text-[56px] font-semibold text-center`}
+        >
           {props.name}
         </h1>
-        <p className=" font-normal text-[28px] text-white text-normal text-center capitalize">
+        <p
+          className={` font-normal text-[28px] text-${props.color} text-normal text-center capitalize`}
+        >
           {props.title}
         </p>
         <div className="flex flex-row justify-center items-center gap-8 mt-[8px] ">

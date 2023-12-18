@@ -38,3 +38,35 @@ export const navlinks = [
     link: "Support",
   },
 ];
+
+export const products = [
+  {
+    id: "store",
+    columns: [
+      {
+        h1: "shop",
+        links: [
+          "shop the latest",
+          "Mac",
+          "iPad",
+          "iPhone",
+          "Apple Watch",
+          "Accessories",
+        ],
+      },
+      {
+        h1: "Quick Links",
+        links: [
+          "shop Holiday Gifts",
+          "Find a Store",
+          "Order Status",
+          "Ways to Buy",
+        ],
+      },
+      {
+        h1: "Shop Special Stores",
+        links: ["Education", "Business"],
+      },
+    ],
+  },
+];
