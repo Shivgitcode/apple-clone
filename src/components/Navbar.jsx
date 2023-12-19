@@ -7,6 +7,7 @@ import Dropdown from "./Dropdown";
 import { useState } from "react";
 export default function Navbar() {
   const [show, setShow] = useState(false);
+  const [id, setId] = useState(0);
 
   return (
     <div>
@@ -14,12 +15,14 @@ export default function Navbar() {
         <li className="px-[8px]">
           <img src={logo} alt="" />
         </li>
-        {navlinks.map((el) => {
+        {navlinks.map((el, index) => {
           return (
             <li
+              key={el.id}
               className="text-[12px] leading-[12px] tracking-[-0.12px] text-white/80 px-[8px] cursor-pointer"
               onMouseEnter={() => {
                 setShow(true);
+                setId(index);
               }}
               onMouseLeave={() => {
                 setShow(false);
@@ -39,10 +42,18 @@ export default function Navbar() {
 
       <div
         className={`absolute text-white z-50 top-[48px] w-full bg-[#1d1d1f] flex ${
-          show ? " opacity-100 translate-y-0" : "opacity-0 -translate-y-2"
+          show
+            ? " opacity-100 translate-y-0"
+            : "invisible opacity-0 -translate-y-2"
         } transition-all duration-200 ease-in-out`}
+        onMouseEnter={() => {
+          setShow(true);
+        }}
+        onMouseLeave={() => {
+          setShow(false);
+        }}
       >
-        <Dropdown></Dropdown>
+        <Dropdown id={id}></Dropdown>
       </div>
     </div>
   );
