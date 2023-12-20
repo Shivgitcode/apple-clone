@@ -1,24 +1,14 @@
 import { products } from "../../constants";
+import DropdownLinks1 from "./DropdownLinks1";
+import DropdownLinks2 from "./DropdownLinks2";
 
 export default function Dropdown({ dataHandler, id }) {
   const index = id;
   const el = products[index];
-  return (
-    <div
-      key={el.id}
-      className="flex w-11/12 ml-[50px]"
-      onMouseEnter={() => dataHandler(el.id)}
-    >
-      {el.columns.map((el) => {
-        return (
-          <ul>
-            <h1>{el.h1}</h1>
-            {el.links.map((el) => {
-              return <li>{el}</li>;
-            })}
-          </ul>
-        );
-      })}
-    </div>
+
+  return el.columns.length > 2 ? (
+    <DropdownLinks1 el={el} />
+  ) : (
+    <DropdownLinks2 el={el} />
   );
 }

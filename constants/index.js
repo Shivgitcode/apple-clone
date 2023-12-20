@@ -46,7 +46,7 @@ export const products = [
       {
         h1: "shop",
         links: [
-          "shop the latest",
+          "Shop the latest",
           "Mac",
           "iPad",
           "iPhone",
