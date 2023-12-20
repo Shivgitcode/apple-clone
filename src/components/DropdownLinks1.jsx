@@ -43,22 +43,6 @@ function DropdownLinks1({ el }) {
           );
         })}
       </ul>
-      {/* {el.columns.map((el) => {
-        return (
-          <ul className="pr-[88px] flex flex-col items-start gap-[4px]">
-            <h1 className="text-[12px] leading-[16px] tracking-[-0.12px] text-[#86868b] mb-[2px]">
-              {el.h1}
-            </h1>
-            {el.links.map((el) => {
-              return (
-                <li className="text-[24px] leading-[28px] tracking-[0.216px] text-[#e8e8ed] ">
-                  {el}
-                </li>
-              );
-            })}
-          </ul>
-        );
-      })} */}
     </div>
   );
 }

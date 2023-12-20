@@ -1,17 +1,15 @@
 import { navlinks } from "../../constants";
 import { logo, Bag, search } from "../assets";
-import { FaApple } from "react-icons/fa";
-import { BsBag } from "react-icons/bs";
-import { CgSearch } from "react-icons/cg";
+
 import Dropdown from "./Dropdown";
 import { useState } from "react";
-export default function Navbar() {
+export default function Navbar({ blurHandler }) {
   const [show, setShow] = useState(false);
   const [id, setId] = useState(0);
 
   return (
     <div>
-      <ul className="flex flex-row justify-center items-center gap-x-[25px] w-fit mx-auto capitalize z-[100] h-fit ">
+      <ul className="flex flex-row justify-center items-center gap-x-[25px] w-fit mx-auto capitalize z-[100] h-fit">
         <li className="px-[8px]">
           <img src={logo} alt="" />
         </li>
@@ -23,20 +21,30 @@ export default function Navbar() {
               onMouseEnter={() => {
                 setShow(true);
                 setId(index);
+                blurHandler(true);
               }}
               onMouseLeave={() => {
                 setShow(false);
+                blurHandler(false);
               }}
             >
               {el.link}
             </li>
           );
         })}
-        <li className="px-[8px]">
-          <img src={search} alt="" />
+        <li className="px-[8px] group">
+          <img
+            src={search}
+            alt=""
+            className=" opacity-80 cursor-pointer group-hover:opacity-100 transition-all duration-100"
+          />
         </li>
-        <li className="px-[8px]">
-          <img src={Bag} alt="" />
+        <li className="px-[8px] group">
+          <img
+            src={Bag}
+            alt=""
+            className=" opacity-80 cursor-pointer group-hover:opacity-100 transition-all duration-100"
+          />
         </li>
       </ul>
 
@@ -48,9 +56,11 @@ export default function Navbar() {
         } transition-all duration-200 ease-in-out`}
         onMouseEnter={() => {
           setShow(true);
+          blurHandler(true);
         }}
         onMouseLeave={() => {
           setShow(false);
+          blurHandler(false);
         }}
       >
         <Dropdown id={id}></Dropdown>

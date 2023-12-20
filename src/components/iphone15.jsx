@@ -40,7 +40,7 @@ export default function IPhone15(props) {
       <img
         src={props.image}
         alt=""
-        className="min-h-[750px] object-cover -z-50"
+        className="min-h-[750px] object-cover -z-50 mb-[15px]"
       />
     </div>
   );
