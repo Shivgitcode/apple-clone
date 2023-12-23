@@ -1,4 +1,13 @@
-import { logo, Bag, search } from "../src/assets";
+import {
+  macbook,
+  watchUltra,
+  watch,
+  ipad,
+  airpods,
+  trading,
+  trade,
+  gift,
+} from "../src/assets";
 
 export const navlinks = [
   {
@@ -328,5 +337,51 @@ export const products = [
         ],
       },
     ],
+  },
+];
+
+export const featuredProducts = [
+  {
+    id: "f1",
+    name: "Wonder awaits",
+    desc: "Give the gifts they've been looking forward to all year",
+    cta: ["shop"],
+    img: gift,
+  },
+  {
+    id: "f2",
+    name: "Macbook Pro",
+    desc: "Mind-blowing. Head-turning",
+    cta: ["Learn more", "Buy"],
+    img: macbook,
+  },
+  {
+    id: "f3",
+    name: watchUltra,
+    desc: "Next-level adventure",
+    cta: ["Learn more", "Buy now"],
+    img: watch,
+  },
+  {
+    id: "f4",
+    name: "iPad",
+    desc: "Lovable. Drawable. Magical",
+    cta: ["Learn more", "Buy now"],
+
+    img: ipad,
+  },
+  {
+    id: "f5",
+    name: "AirPods Pro",
+    desc: "Adative Audio. Now Playing",
+    cta: ["Learn more", "Buy now"],
+    img: airpods,
+  },
+  {
+    id: "f6",
+    name: trade,
+    desc: "Upgrade and save . It's that easy",
+    cta: ["See what your device is worth"],
+    img: trading,
   },
 ];

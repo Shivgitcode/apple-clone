@@ -5,6 +5,7 @@ import Dropdown from "./components/Dropdown";
 import { iphone15, iphone152 } from "./assets";
 import Player from "./components/Player";
 import { useState } from "react";
+import Featuredproducts from "./components/Featuredproducts";
 function App() {
   const [isBlur, setIsBlur] = useState(false);
 
@@ -40,6 +41,9 @@ function App() {
       </div>
       <div>
         <Player></Player>
+      </div>
+      <div>
+        <Featuredproducts></Featuredproducts>
       </div>
     </div>
   );

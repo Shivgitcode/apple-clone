@@ -5,8 +5,9 @@ function Player() {
   return (
     <div className="relative">
       <video
-        autoPlay
         loop
+        autoPlay={true}
+        muted
         src={large}
         className="-z-50 w-full max-h-[750px] relative object-cover "
       ></video>
