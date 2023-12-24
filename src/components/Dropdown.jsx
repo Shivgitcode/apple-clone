@@ -1,4 +1,4 @@
-import { products } from "../../constants";
+import { products } from "../constants";
 import DropdownLinks1 from "./DropdownLinks1";
 import DropdownLinks2 from "./DropdownLinks2";
 

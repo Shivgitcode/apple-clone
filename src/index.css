@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-img {
+  background-image: url("/src/assets/asset\ 3.jpeg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

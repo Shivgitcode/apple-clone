@@ -1,4 +1,4 @@
-import { navlinks } from "../../constants";
+import { navlinks } from "../constants";
 import { logo, Bag, search } from "../assets";
 
 import Dropdown from "./Dropdown";

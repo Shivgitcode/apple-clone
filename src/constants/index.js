@@ -7,7 +7,7 @@ import {
   trading,
   trade,
   gift,
-} from "../src/assets";
+} from "../assets";
 
 export const navlinks = [
   {
