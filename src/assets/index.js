@@ -13,6 +13,12 @@ import trading from "./asset 11.jpeg";
 import trade from "./asset 10.png";
 import gift from "./asset 4.jpeg";
 
+import img1 from "./asset 12.jpeg";
+import img2 from "./asset 15.jpeg";
+import img3 from "./asset 17.jpeg";
+import img4 from "./asset 19.jpeg";
+import img5 from "./asset 21.jpeg";
+
 export {
   logo,
   Bag,
@@ -27,4 +33,9 @@ export {
   trading,
   trade,
   gift,
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
 };

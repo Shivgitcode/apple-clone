@@ -7,6 +7,11 @@ import {
   trading,
   trade,
   gift,
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
 } from "../assets";
 
 export const navlinks = [
@@ -384,4 +389,14 @@ export const featuredProducts = [
     cta: ["See what your device is worth"],
     img: trading,
   },
+];
+
+export const images = [
+  { opacity: false, image: img5 },
+  { opacity: false, image: img1 },
+  { opacity: false, image: img2 },
+  { opacity: false, image: img3 },
+  { opacity: false, image: img4 },
+  { opacity: false, image: img5 },
+  { opacity: false, image: img1 },
 ];

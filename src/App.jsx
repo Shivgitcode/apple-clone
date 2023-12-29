@@ -6,6 +6,7 @@ import { iphone15, iphone152 } from "./assets";
 import Player from "./components/Player";
 import { useState } from "react";
 import Featuredproducts from "./components/Featuredproducts";
+import CardSlider from "./components/CardSlider";
 function App() {
   const [isBlur, setIsBlur] = useState(false);
 
@@ -44,6 +45,9 @@ function App() {
       </div>
       <div>
         <Featuredproducts></Featuredproducts>
+      </div>
+      <div>
+        <CardSlider></CardSlider>
       </div>
     </div>
   );
