@@ -85,7 +85,7 @@ function CardSlider() {
                 style={{ translate: `${index * -100}%` }}
                 className={`${
                   yo ? "transition-all" : "transition-none"
-                } duration-1000 ease-in flex-grow-0 flex-shrink-0 ${
+                } duration-1000 flex-grow-0 flex-shrink-0 ${
                   el.opacity && "opacity-30"
                 }`}
               />
@@ -95,7 +95,7 @@ function CardSlider() {
       </div>
 
       {/* <img src={images[index]} alt="" /> */}
-      <div className="flex flex-row justify-center items-center gap-[1px]">
+      <div className="flex flex-row justify-center items-center gap-[1px] my-[5px] relative">
         <div>
           {items.map((el, idx) => {
             return (
@@ -112,14 +112,14 @@ function CardSlider() {
           })}
         </div>
 
-        <div className="relative left-10 top-1">
+        <div className="absolute right-10 top-0  ">
           {icons ? (
             <button onClick={() => handlePause()}>
-              <IoPauseCircleOutline fontSize="20px"></IoPauseCircleOutline>
+              <IoPauseCircleOutline fontSize="30px"></IoPauseCircleOutline>
             </button>
           ) : (
             <button onClick={() => handleStart()}>
-              <IoPlayCircleOutline fontSize="20px"></IoPlayCircleOutline>
+              <IoPlayCircleOutline fontSize="30px"></IoPlayCircleOutline>
             </button>
           )}
         </div>
