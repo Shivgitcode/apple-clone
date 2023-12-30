@@ -400,3 +400,118 @@ export const images = [
   { opacity: false, image: img5 },
   { opacity: false, image: img1 },
 ];
+
+export const footer = [
+  {
+    id: "footer1",
+    element: [
+      {
+        heading: "Shop and Learn",
+        links: [
+          "store",
+          "Mac",
+          "iPad",
+          "iPhone",
+          "Watch",
+          "AirPods",
+          "TV & Home",
+          "AirTag",
+          "Accessories",
+          "Gift Cards",
+        ],
+      },
+      {
+        heading: "Apple Wallet",
+        links: ["Wallet"],
+      },
+    ],
+  },
+  {
+    id: "footer2",
+    element: [
+      {
+        heading: "Account",
+        links: ["Manage Your Apple ID", "Apple Store Account", "iCloud.com"],
+      },
+      {
+        heading: "Entertainment",
+        links: [
+          "Apple One",
+          "Apple TV+",
+          "Apple Music",
+          "Apple Arcade",
+          "Apple Podcasts",
+          "Apple Books",
+          "App Store",
+        ],
+      },
+    ],
+  },
+  {
+    id: "footer3",
+    element: [
+      {
+        heading: "Apple Store",
+        links: [
+          "Find a Store",
+          "Genius Bar",
+          "Today at Apple",
+          "Apple Camp",
+          "Apple Trade In",
+          "Ways to Buy",
+          "Recycling Programme",
+          "Order Status",
+          "Shopping Help",
+        ],
+      },
+    ],
+  },
+  {
+    id: "footer4",
+    element: [
+      {
+        heading: "For Business",
+        links: ["Apple and Business", "Shop for Business"],
+      },
+      {
+        heading: "For Education",
+        links: [
+          "Apple and Education",
+          "Shop for Education",
+          "Shop for University",
+        ],
+      },
+      {
+        heading: "For Healthcare",
+        links: ["Apple in Healthcare", "Health on Apple Watch"],
+      },
+    ],
+  },
+  {
+    id: "footer5",
+    element: [
+      {
+        heading: "Apple Values",
+        links: [
+          "Accessibility",
+          "Education",
+          "Environment",
+          "Privacy",
+          "Supplier Responsibility",
+        ],
+      },
+      {
+        heading: "About Apple",
+        links: [
+          "Newsroom",
+          "Apple Leadership",
+          "Career Oppertunities",
+          "Investors",
+          "Ethics & Compliance",
+          "Events",
+          "Contact Apple",
+        ],
+      },
+    ],
+  },
+];

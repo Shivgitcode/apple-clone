@@ -7,6 +7,7 @@ import Player from "./components/Player";
 import { useState } from "react";
 import Featuredproducts from "./components/Featuredproducts";
 import CardSlider from "./components/CardSlider";
+import Footer from "./components/Footer";
 function App() {
   const [isBlur, setIsBlur] = useState(false);
 
@@ -48,6 +49,10 @@ function App() {
       </div>
       <div>
         <CardSlider></CardSlider>
+      </div>
+
+      <div>
+        <Footer></Footer>
       </div>
     </div>
   );
