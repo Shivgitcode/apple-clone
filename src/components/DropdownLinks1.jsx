@@ -37,7 +37,7 @@ function DropdownLinks1({ el }) {
         </h1>
         {el.columns[2].links.map((el) => {
           return (
-            <li className="text-[12px] leading-[16.0005px] tracking-[-0.12px]">
+            <li className="text-[12px] leading-[16.0005px] tracking-[-0.12px] font-medium py-[7px] px-[11px] mb-[-6px] ml-[-11px] ">
               {el}
             </li>
           );

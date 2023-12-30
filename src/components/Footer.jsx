@@ -4,7 +4,7 @@ import Footers from "./Footers";
 export default function Footer() {
   return (
     <div className="w-full h-full bg-[#f5f5f7]">
-      <footer className="w-[52%] flex flex-col items-center justify-between mx-auto px-[22px] ">
+      <footer className="w-[50%] flex flex-col items-center justify-between mx-auto px-[22px] ">
         <div className="w-full pt-[17px] pb-[11px] border-b-[1px] border-[#000]/60">
           <p className="text-[12px] pb-[9px] leading-[16px] tracking-[-0.12px] text-[#000]/60 w-full">
             *Instant savings, otherwise referred to as instant cashback, is
