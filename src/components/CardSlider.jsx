@@ -20,7 +20,7 @@ function CardSlider() {
       setIndex(1);
       setYo(false);
     } else if (index === items.length - 2) {
-      setDuration(995);
+      setDuration(999);
       setIndex(index + 1);
     } else {
       setIndex(index + 1);
@@ -102,9 +102,9 @@ function CardSlider() {
               <button
                 key={idx}
                 onClick={() => clickHandler(idx)}
-                className={`rounded-full bg-black/30 px-2 scale-[0.4]  text-transparent ${
-                  !el.opacity && "bg-black"
-                } transition-all duration-100`}
+                className={`rounded-full px-2 scale-[0.4]  text-transparent transition-all duration-1000 ${
+                  !el.opacity ? "bg-black" : "bg-black/30"
+                }`}
               >
                 {idx}
               </button>
