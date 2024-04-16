@@ -4,7 +4,7 @@ import search from "./asset 39.svg";
 import iphone15 from "./asset 0.jpeg";
 import iphone152 from "./asset 1.jpeg";
 import macbook from "./asset 5.jpeg";
-import watchUltra from "./asset 6.png";
+import watchUltra from "./asset 6.jpg";
 import watch from "./asset 7.jpeg";
 import ipad from "./asset 8.jpeg";
 import airpods from "./asset 9.jpeg";
