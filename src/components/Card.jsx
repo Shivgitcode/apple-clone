@@ -3,21 +3,19 @@ function Card({ el }) {
   return (
     <div className="relative flex flex-col items-center">
       <div className="flex flex-col justify-center items-center absolute w-full mx-auto py-[53px] gap-y-[10px]">
-        {el.name.includes("src") ? (
+        {el.name.includes("asset") ? (
           <img src={el.name} />
         ) : (
           <h1
-            className={`text-[40px] leading-[1.1] font-semibold ${
-              el.name.includes("AirPods") && "text-white"
-            }`}
+            className={`text-[40px] leading-[1.1] font-semibold ${el.name.includes("AirPods") && "text-white"
+              }`}
           >
             {el.name}
           </h1>
         )}
         <p
-          className={` text-[21px] leading-[1.2] font-normal ${
-            el.name.includes("AirPods") && "text-white"
-          } `}
+          className={` text-[21px] leading-[1.2] font-normal ${el.name.includes("AirPods") && "text-white"
+            } `}
         >
           {el.desc}
         </p>
